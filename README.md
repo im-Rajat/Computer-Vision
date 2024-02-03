@@ -3,6 +3,9 @@
 
 Following different courses/tutorials to understand and learn  about computer vision and OpenCV
 
+## Sections
+
+- [AI_Module](https://github.com/im-Rajat/Computer-Vision/tree/main/AI_Module) : To understand Face detection, Mask detection, & Coordinates for center of forehead.
 
 ### References :
 
