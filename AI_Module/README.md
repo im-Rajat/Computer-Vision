@@ -17,8 +17,7 @@
 - It is basically a machine learning object detection algorithm which is used to identify objects in an image or video.
 - In OpenCV, we have several trained  Haar Cascade models which are saved as XML files.
 - Instead of creating and training the model from scratch, we use this file. We are going to use `haarcascade_frontalface_alt2.xml` file in this project.
-
-    #### Library Used: OpenCV
+- #### Library Used: OpenCV
     - Function : def face_detection(image_path):
     - It require a single input, path of the image and return true and false on the basis of human presence
 
@@ -29,8 +28,7 @@
 - The model is trained on RGB images so we convert the image into RGB here.
 - The model identify mask and return probability of images with masks and without masks.
 - On comparing these probability we can return true if with mask probability is greater than without mask probability and vice versa.
-
-    #### Library Used : OpenCV , tensorflow.keras.preprocessing.image, tensorflow.keras.models, tensorflow.keras.applications.mobilenet_v2, numpy
+- #### Library Used : OpenCV , tensorflow.keras.preprocessing.image, tensorflow.keras.models, tensorflow.keras.applications.mobilenet_v2, numpy
     - Function : def mask_detection(image_path):
     - It require a single input, path of the image and return true and false on the basis of presence of mask on human face.
 
@@ -39,8 +37,7 @@
 - Firstly we do the same process of face detection. After detecting the face we will have coordinates of the same.
 - So now we are dividing the face horizontally in 3 parts. The upper part are get the forehead of face.
 - Now we are finding the middle of that part, it will give us the x, y coordinates of the center of forehead
-
-    #### Library Used: OpenCV
+- #### Library Used: OpenCV
     - Function : def forehead_coordinates(image_path):
     - It require a single input, path of the image and x, y coordinates of center of forehead. If face not detected in the given image then it will return “face not detected”.
 
